@@ -22,13 +22,14 @@ const connect = function () {
     conn.write('Name: BYC');
   });
 
-  conn.on("connect", () => {
-    setInterval(() => {
-      conn.write('Move: up');
-      setTimeout(() => {
-        conn.write('Move: left');
-      }, 300)
-    }, 600)
+
+  // conn.on("connect", () => {
+    // setInterval(() => {
+    //   conn.write('Move: up');
+    //   setTimeout(() => {
+    //     conn.write('Move: left');
+    //   }, 300)
+    // }, 600)
     // setTimeout(() => {
     //   conn.write('Move: up');
     // }, 50);
@@ -41,8 +42,7 @@ const connect = function () {
     // setTimeout(() => {
     //   conn.write('Move: up');
     // }, 50);
-
-  });
+  // });
 
   return conn;
 };
