@@ -8,8 +8,6 @@ const connect = function () {
     port: '50541'
   });
 
-
-
   // interpret incoming data as text
   conn.setEncoding("utf8");
   conn.on("data", (e) => {
@@ -22,11 +20,6 @@ const connect = function () {
     console.log('Successfully connected to game server');
     conn.write('Name: BYC');
   });
-
-
-
-
-
 
   // conn.on("connect", () => {
     // setInterval(() => {
