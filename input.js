@@ -27,9 +27,9 @@ const handleUserInput = function(key) {
 }
 
 
-// const stdin = setupInput();
-stdin.setRawMode(true);
-stdin.setEncoding("utf8");
+// // const stdin = setupInput();
+// stdin.setRawMode(true);
+// stdin.setEncoding("utf8");
 stdin.on("data", handleUserInput);
 
 
