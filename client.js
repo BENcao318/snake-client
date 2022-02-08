@@ -1,4 +1,5 @@
 const net = require("net");
+const { stderr } = require("process");
 
 // establishes a connection with the game server
 const connect = function () {
@@ -21,6 +22,10 @@ const connect = function () {
     console.log('Successfully connected to game server');
     conn.write('Name: BYC');
   });
+
+
+
+
 
 
   // conn.on("connect", () => {
