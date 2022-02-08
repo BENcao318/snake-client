@@ -1,6 +1,8 @@
 // setup interface to handle user input from stdin
 
 const { stdin } = require("process");
+const { KEYS } = require('./constants');
+
 let connection;
 
 const setupInput = function (conn) {
@@ -15,17 +17,8 @@ const setupInput = function (conn) {
 const handleUserInput = function(key) {
   if(key === '\u0003') {
     process.exit();
-  } else if( key === '\u0077') {
-    connection.write('Move: up');
-  } else if( key === '\u0061') {
-    connection.write('Move: left');
-  } else if( key === '\u0073') {
-    connection.write('Move: down');
-  } else if( key === '\u0064') {
-    connection.write('Move: right');
-  } else if( key === '\u0076') {
-    connection.write('Say: I will win!!!');
   }
+  connection.write(KEYS[key]);
 }
 
 
