@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+!["screenshot of the snek game with multiple players"](https://github.com/BENcao318/snake-client/blob/master/docs/multi-players%20screen.png?raw=true)
+!["screenshot of the client terminal when multiple players in the server"](https://github.com/BENcao318/snake-client/blob/master/docs/multi-players%20terminal.png?raw=true)
 
 
 ## Getting Started
