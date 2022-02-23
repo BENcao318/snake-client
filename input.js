@@ -21,16 +21,8 @@ const handleUserInput = function(key) {
   connection.write(KEYS[key]);
 }
 
-
-// // const stdin = setupInput();
-// stdin.setRawMode(true);
-// stdin.setEncoding("utf8");
 stdin.on("data", handleUserInput);
 
-
-
-// const stdin = setupInput();
-// stdin.on("data", handleUserInput);
 module.exports = {
   setupInput,
 }
